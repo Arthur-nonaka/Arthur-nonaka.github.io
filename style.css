@@ -1,13 +1,17 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
+  font-family: "Roboto", Arial, sans-serif;
+  /* background-color: #121212; */
   background-image: linear-gradient(
     45deg,
     rgba(0, 0, 0, 0.8),
     rgba(18, 18, 18, 0.9)
   );
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header {
@@ -16,47 +20,98 @@ body {
 }
 
 #sobre-mim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 50px 20px;
-  text-align: center;
+  width: 85vw;
+  text-align: left;
+  background-color: #0000006e;
+  border-radius: 0px 0px 20px 20px;
 }
 
-#projetos {
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle, transparent 65%, #000000 76%);
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* margin: 0 auto 20px; */
+  display: block;
+}
+
+#projetos-container {
   padding: 50px 20px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  width: 85vw;
+  flex-direction: column;
   justify-content: center;
+  align-self: center;
+  gap: 20px;
 }
 
 .projeto {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 85vw;
+  height: 100px;
   cursor: pointer;
   overflow: hidden;
-  border: 1px solid #333;
-  border-radius: 5px;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  display: flex;
+  flex-direction: row;
 }
 
 .projeto img {
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
 .projeto:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
+/* .gradiant-overlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 100%;
+} */
 
 .overlay {
   position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 50%;
   padding: 10px;
   text-align: center;
+}
+
+.overlay-border {
+  position: absolute;
+  left: -110px;
+  top: 0;
+  border-style: solid;
+  border-width: 70px 0px 0px 110px;
+  border-color: rgba(0, 0, 0, 0.8) transparent; 
 }
 
 .btn-contato {
@@ -73,7 +128,7 @@ body {
 }
 
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 10;
   left: 0;
@@ -103,16 +158,34 @@ body {
 }
 
 .contatos {
-    z-index: 1;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    width: 7vw;
-    height: 4vh;
-    display: flex;
-    justify-content: center;
-    background-color: aliceblue;
-    border-radius: 5px 0 0 0;
-    padding: 5px;   
+  z-index: 1;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 7vw;
+  height: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 5px 0 0 0;
+  padding: 5px;
 
+  a {
+    color: #000;
+    text-decoration: none;
+    i {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure the particles are behind your content */
 }

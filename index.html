@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/ff30f93608.js"
@@ -11,23 +16,35 @@
     <title>Arthur Nonaka Oda</title>
   </head>
   <body>
+    <div id="particles-js"></div>
     <section id="sobre-mim">
-      <img src="https://github.com/Arthur-nonaka.png" alt="Foto do Arthur" />
-      <h1>Olá, eu sou Arthur Nonaka Oda! 👋</h1>
-      <p>Estudante de Análise e Desenvolvimento de Sistemas na FATEC</p>
-      <p>
-        Desenvolvedor focado em JavaScript, TypeScript, React, Node.js, Next.js
-        e Electron
-      </p>
+      <section class="texto">
+        <h1>Olá, eu sou Arthur Nonaka Oda!</h1>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas na FATEC</p>
+        <p>
+          Estou em busca de experiências profissionais e oportunidades de
+          mostrar os resultados dos meus estudos, gosto de estudar novas
+          linguagens e modeleos de projeto. Tenho conhecimento em
+          desenvolvimento Web (Next & Node).
+        </p>
+      </section>
+      <div class="image-container">
+        <img
+          class="avatar"
+          src="https://github.com/Arthur-nonaka.png"
+          alt="Foto do Arthur"
+        />
+      </div>
     </section>
 
-    <section id="projetos">
-      <h2>Projetos</h2>
+    <section id="projetos-container">
       <div class="projeto" onclick="mostrarDetalhes(this)">
         <img src="projeto1.jpg" alt="Projeto 1" />
         <div class="overlay">
+          <div class="overlay-border"></div>
           <p>Projeto 1</p>
         </div>
+        <div class="gradiant-overlay"></div>
       </div>
       <!-- Você pode adicionar mais divs com a classe "projeto" para outros projetos -->
     </section>
