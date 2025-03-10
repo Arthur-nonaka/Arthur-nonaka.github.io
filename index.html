@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ff30f93608.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Arthur Nonaka Oda</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        img {
-            width: 150px;
-            border-radius: 50%;
-        }
-    </style>
-</head>
-<body>
-    <h1>Olá, eu sou Arthur Nonaka Oda! 👋</h1>
-    <p>Estudante de Análise e Desenvolvimento de Sistemas na FATEC</p>
-    <p>Desenvolvedor focado em JavaScript, TypeScript, React, Node.js, Next.js e Electron</p>
-    <img src="https://github.com/Arthur-nonaka.png" alt="Foto do Arthur">
-    <h2>📢 Contato</h2>
-    <p><a href="https://github.com/Arthur-nonaka">GitHub</a> | <a href="https://linkedin.com/in/seu-perfil">LinkedIn</a></p>
-</body>
+  </head>
+  <body>
+    <section id="sobre-mim">
+      <img src="https://github.com/Arthur-nonaka.png" alt="Foto do Arthur" />
+      <h1>Olá, eu sou Arthur Nonaka Oda! 👋</h1>
+      <p>Estudante de Análise e Desenvolvimento de Sistemas na FATEC</p>
+      <p>
+        Desenvolvedor focado em JavaScript, TypeScript, React, Node.js, Next.js
+        e Electron
+      </p>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <div class="projeto" onclick="mostrarDetalhes(this)">
+        <img src="projeto1.jpg" alt="Projeto 1" />
+        <div class="overlay">
+          <p>Projeto 1</p>
+        </div>
+      </div>
+      <!-- Você pode adicionar mais divs com a classe "projeto" para outros projetos -->
+    </section>
+
+    <section class="contatos">
+      <a href="https://github.com/Arthur-nonaka" target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/arthur-nonaka-868488292/"
+        target="_blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+    </section>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <h2>Detalhes do Projeto</h2>
+        <p>Aqui você pode adicionar uma descrição mais detalhada do projeto.</p>
+        <video controls>
+          <source src="video-projeto.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeos HTML5.
+        </video>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-  
