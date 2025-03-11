@@ -99,19 +99,20 @@ body {
 .overlay {
   position: absolute;
   right: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 1);
   width: 50%;
-  padding: 10px;
+  height: 100%;
+  padding: 20px;
   text-align: center;
 }
 
 .overlay-border {
   position: absolute;
-  left: -110px;
+  left: -80px;
   top: 0;
   border-style: solid;
-  border-width: 70px 0px 0px 110px;
-  border-color: rgba(0, 0, 0, 0.8) transparent; 
+  border-width: 100px 0px 0px 80px;
+  border-color: rgba(0, 0, 0, 1) transparent; 
 }
 
 .btn-contato {
@@ -165,7 +166,7 @@ body {
   width: 7vw;
   height: 4vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: aliceblue;
   border-radius: 5px 0 0 0;
@@ -175,8 +176,8 @@ body {
     color: #000;
     text-decoration: none;
     i {
-      width: 100%;
-      height: 100%;
+      width: 25px;
+      height: 25px;
     }
   }
 }
