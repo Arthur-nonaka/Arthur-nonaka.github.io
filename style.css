@@ -308,10 +308,9 @@ footer {
   .overlay-border {
     display: none;
   }
-
   /* Modal adjustments */
   .modal-content {
-    width: 95%;
+    width: 80%;
     margin: 20% auto;
   }
 
