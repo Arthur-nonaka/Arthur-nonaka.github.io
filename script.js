@@ -93,7 +93,7 @@ const data = [
     image: "./imgs/Sorteador.png",
     description:
       "Site para sorteio de nomes, feito para ser usado em lives da Twitch. Com controle de viewers VIPs",
-    video: "",
+    video: "./videos/Sorteador.mp4",
   },
   {
     title: "Ensino Estrutura De Dados",
