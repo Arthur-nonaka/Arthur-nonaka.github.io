@@ -106,7 +106,7 @@ const data = [
     title: "Campo Minado",
     image: "./imgs/Campo-Minado.png",
     description: "Jogo de campo minado feito com React para aprender a usa-la.",
-    video: "Campo-Minado.mp4",
+    video: "./videos/CampoMinado.mp4",
   },
 ];
 
