@@ -26,6 +26,18 @@ body {
   text-align: left;
   background-color: #0000006e;
   border-radius: 0px 0px 20px 20px;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .texto {
+    padding-right: 50px;
+  }
 }
 
 .image-container {
@@ -100,8 +112,13 @@ body {
   background: rgba(0, 0, 0, 1);
   width: 50%;
   height: 100%;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
+  font-size: 1.7rem;
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 .overlay-border {
